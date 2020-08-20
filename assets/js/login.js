@@ -21,13 +21,13 @@ $('.login form').on('submit', function (e) {
 // 切换盒子//
 $('.login a').click(function (e) {
     e.preventDefault();
-    $('.register').show()
-    $('.login').hide()
+    $('.register').show().prev().hide()
+    // $('.login').hide()
 })
 $('.register a').click(function (e) {
     e.preventDefault();
-    $('.login').show()
-    $('.register').hide()
+    $('.login').show().next().hide()
+    // $('.register').hide()
 })
 
 //注册//
@@ -47,3 +47,15 @@ $('.register form').on('submit', function (e) {
         }
     })
 })
+// 验证
+// 加载模块
+var form = layui.form
+// 使用方法  里面装对象
+form.verify({
+    //使用数组
+    changdu: [/^[\S]{6,12}$/, '长度6-12位,不允许有空格'],
+    same: function (val) {
+        var pwd = $('.pwd').val()
+        if (pwd !== val) return '两次密码不一致'
+    }
+});

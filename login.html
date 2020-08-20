@@ -32,7 +32,7 @@
             <!-- 第二行 密码 -->
             <div class="layui-form-item">
 
-                <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                <input type="password" name="password" required lay-verify="required|changdu" placeholder="请输入密码"
                     autocomplete="off" class="layui-input">
             </div>
             <!-- 第三行 按钮 -->
@@ -60,14 +60,14 @@
             <!-- 第二行 密码 -->
             <div class="layui-form-item">
 
-                <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
-                    autocomplete="off" class="layui-input">
+                <input type="password" name="password" required lay-verify="required|changdu" placeholder="请输入密码"
+                    autocomplete="off" class="layui-input pwd">
             </div>
             <!-- 第二行B 确认密码 -->
             <div class="layui-form-item">
 
-                <input type="password" required lay-verify="required" placeholder="请确认密码" autocomplete="off"
-                    class="layui-input">
+                <input type="password" required lay-verify="required|changdu|same" placeholder="请确认密码"
+                    autocomplete="off" class="layui-input">
             </div>
             <!-- 第三行 按钮 -->
             <div class="layui-form-item ">
