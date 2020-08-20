@@ -5,27 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录页面</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #f60;
-        }
-
-        p {
-            margin-top: 20px;
-            padding-left: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
 </head>
 
 <body>
-    <p>
-        hello
-    </p>
+    <!-- logo区域 -->
+
+    <div class="logo">
+        <img src="./assets/images/logo.png" alt="">
+    </div>
+
+    <!-- 登录区域 -->
+    <div class="box login">
+        <!-- 标题 -->
+        <div class="title"></div>
+        <!-- 表单 -->
+        <form class="layui-form" action="">
+            <!-- 第一行 用户名 -->
+            <div class="layui-form-item">
+
+                <input type="text" name="title" required lay-verify="required" placeholder="请输入账号" autocomplete="off"
+                    class="layui-input">
+
+            </div>
+            <!-- 第二行 密码 -->
+            <div class="layui-form-item">
+
+                <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                    autocomplete="off" class="layui-input">
+            </div>
+            <!-- 第三行 按钮 -->
+            <div class="layui-form-item ">
+                <button class="layui-btn layui-btn-fluid layui-bg-blue" lay-submit lay-filter="formDemo">登录</button>
+            </div>
+            <!-- 第四行 超链接 -->
+            <div class="layui-form-item goto">
+                <a href="#">注册账号</a>
+            </div>
+        </form>
+        <!-- 登录区域结束 -->
+    </div>
+    <!-- 注册区域 -->
+    <div class="box register">
+        <div class="title"></div>
+        <form class="layui-form " action="">
+            <!-- 第一行 用户名 -->
+            <div class="layui-form-item">
+
+                <input type="text" name="title" required lay-verify="required" placeholder="请输入账号" autocomplete="off"
+                    class="layui-input">
+
+            </div>
+            <!-- 第二行 密码 -->
+            <div class="layui-form-item">
+
+                <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                    autocomplete="off" class="layui-input">
+            </div>
+            <!-- 第二行B 确认密码 -->
+            <div class="layui-form-item">
+
+                <input type="password" name="password" required lay-verify="required" placeholder="请确认密码"
+                    autocomplete="off" class="layui-input">
+            </div>
+            <!-- 第三行 按钮 -->
+            <div class="layui-form-item ">
+                <button class="layui-btn layui-btn-fluid layui-bg-blue" lay-submit lay-filter="formDemo">注册</button>
+            </div>
+            <!-- 第四行 超链接 -->
+            <div class="layui-form-item goto">
+                <a href="#">已有账号 去登录</a>
+            </div>
+        </form>
+    </div>
+    <!-- 注册区域结束 -->
+
+
+
+    <script src="./assets/lib/jquery.js"></script>
+    <script src="./assets/lib/layui/layui.all.js"></script>
+    <script src="./assets/js/login.js"></script>
+
 </body>
 
 </html>
