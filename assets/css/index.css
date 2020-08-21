@@ -1,0 +1,42 @@
+.iconfont::before {
+    padding-right: 10px;
+}
+
+.icon-pinglun::before {
+    padding-left: 15px;
+    padding-right: 8px;
+}
+
+div.userinfo {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.text-avatar {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 15px;
+    font-size: 32px;
+    color: #fff;
+    background-color: #419487;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.text-avatar img {
+    width: 100%;
+    border-radius: 50%;
+    display: none;
+    vertical-align: middle;
+}
+
+.text-avatar {
+    display: none;
+}
+
+.userinfo img {
+    display: none;
+}
