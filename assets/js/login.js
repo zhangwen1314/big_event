@@ -4,7 +4,7 @@ $('.login form').on('submit', function (e) {
     e.preventDefault();
     var data = $(this).serialize()
     $.ajax({
-        url: 'http://ajax.frontend.itheima.net/api/login',
+        url: '/api/login',
         type: 'POST',
         data: data,
         success: function (res) {
@@ -35,7 +35,7 @@ $('.register form').on('submit', function (e) {
     e.preventDefault();
     var data = $(this).serialize()
     $.ajax({
-        url: 'http://ajax.frontend.itheima.net/api/reguser',
+        url: '/api/reguser',
         type: 'POST',
         data: data,
         success: function (res) {
