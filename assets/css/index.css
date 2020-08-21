@@ -40,3 +40,13 @@ div.userinfo {
 .userinfo img {
     display: none;
 }
+
+.layui-body {
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    background-color: #f60;
+}
