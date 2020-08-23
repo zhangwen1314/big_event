@@ -5,7 +5,7 @@ function getUserInfo() {
     $.ajax({
         url: '/my/userinfo',
         success: function (res) {
-            console.log(res, res.data.nickname, res.data.username)
+            // console.log(res, res.data.nickname, res.data.username)
 
             if (res.status === 0) {
                 var name = res.data.nickname || res.data.username
@@ -18,10 +18,10 @@ function getUserInfo() {
                     $('.text-avatar').html(s).css('display', 'inline-block')
                 }
             }
-            // else if (res.status === 1 && res.message === '身份认证失败！') {
-            //     localStorage.removeItem('token')
-            //     location.href = '/login.html'
-            // }
+            else if (res.status === 1 && res.message === '身份认证失败！') {
+                localStorage.removeItem('token')
+                location.href = '/login.html'
+            }
         },
         // headers: {
         //     Authorization: localStorage.getItem('token')
