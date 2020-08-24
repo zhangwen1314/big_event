@@ -10,28 +10,24 @@
 </head>
 
 <body>
-
     <div class="layui-card">
         <div class="layui-card-header">文章列表</div>
-
         <div class="layui-card-body">
             <!-- 筛选区 -->
-            <form class="layui-form" action="">
+            <form class="layui-form" action="" id="search">
                 <div class="layui-form-item">
                     <div class="layui-inline">
                         <div class="layui-input-inline" style="width: 200px;">
                             <select name="city" lay-verify="" id="category">
                                 <option value="">请选择分类</option>
-                                <option value="010">北京</option>
-                                <option value="021">上海</option>
-                                <option value="0571">杭州</option>
+
                             </select>
                         </div>
                         <div class="layui-input-inline" style="width: 200px;">
-                            <select name="city" lay-verify="">
+                            <select name="city" id="categroys" lay-verify="">
                                 <option value="">所有状态</option>
-                                <option value="010">已发布</option>
-                                <option value="021">草稿</option>
+                                <option>已发布</option>
+                                <option>草稿</option>
                             </select>
                         </div>
                     </div>
@@ -44,6 +40,7 @@
                 </div>
             </form>
             <!-- 筛选区结束 -->
+
             <!-- 表格区域 -->
             <table class="layui-table">
                 <colgroup>
@@ -77,6 +74,7 @@
                 </tbody>
             </table>
             <!-- 表格区域结束 -->
+
             <!-- 分页区域 -->
             <div id="test1"></div>
             <!-- 分页区域end -->
